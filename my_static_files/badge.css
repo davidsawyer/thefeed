@@ -1,0 +1,10 @@
+div.interior-image {
+    display: inline-block;
+    position: absolute;
+}
+span.nutritionkitchen {
+    width: 50px;
+    height: 64px;
+    background: url(/static/nk.png) no-repeat;
+    position: absolute;     
+}
