@@ -5,4 +5,4 @@ a mobile web application designed to make cooking meals at home easier for stude
 
 the feed lives at thefeedapp.mynmi.net
 
-this is a project of the New Media Institute at the University of Georgia
+this is a capstone project of the New Media Institute at the University of Georgia
