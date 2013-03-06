@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block rightbutton %}
+<form action="" method="post" enctype="multipart/form-data" data-ajax="false">
+	{% csrf_token %}
+	<input type="submit" value="Clear List" data-rel="dialog" data-role="button" class="ui-btn-right"/>
+</form>
+{% endblock %}
+
+{% block content %}
+    	<div data-role="content" style="padding: 15px">
+			{% if not entries %}
+				<div style="text-align: center;">
+					<p>You currently don't have anything in your shopping list.</p>
+					<p>To add ingredients, press "Add to List" when viewing a meal's details.</p>
+				</div>
+			{% else %}
+            <div data-role="fieldcontain">
+			 	<fieldset data-role="controlgroup">
+					{% for entry in entries %}
+					<input type="checkbox" name="{{forloop.counter}}" id="{{forloop.counter}}" class="custom" />
+					<label for="{{forloop.counter}}">{{ entry }}</label>
+					{% endfor %}
+			    </fieldset>
+			</div>
+			{% endif %} 
+		</div>
+	{% endblock %}
+{% block list %}class="ui-btn-active ui-state-persist"{% endblock %}
