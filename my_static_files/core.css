@@ -2,7 +2,8 @@
 /* Main Style
 ---------------------------------------------------------------------------------------------------*/
 html.ui-mobile body.ui-mobile-viewport div#page1.ui-page div#mealslist { 
-background-image: url("/static/core_theme/images/wood.jpg")
+background-image: url("/static/core_theme/images/wood.jpg");
+background-attachment: fixed;
 }
 
 .nav-glyphish-example .ui-btn .ui-btn-inner {
