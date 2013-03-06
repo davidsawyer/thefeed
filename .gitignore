@@ -4,4 +4,4 @@
 local_settings.py
 .DS_Store
 *.db
-static_dont_touch/*
+static_dont_touch/
